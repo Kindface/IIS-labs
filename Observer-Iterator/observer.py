@@ -36,3 +36,11 @@ class Observer:
     def update(self, subject: Subject):
         if subject.clothes in subject._clothes:
             print(subject.clothes + " появилась в наличии")
+
+
+if __name__ == "__main__":
+    subject = Subject("TeamSesh Seshskull tee")
+    observer = Observer()
+    subject.attach(observer)
+    subject.logic()
+    subject.detach(observer)
