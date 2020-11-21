@@ -8,8 +8,8 @@ class MercedesSportCar {
     constructor(builder) {    
         this.model = builder.model;     
         this.color = builder.color;
-        this.engine = builder.engine || false
-        this.leather = builder.leather || false
+        this.engine = builder.engine || "По умолчанию"
+        this.leather = builder.leather || "По умолчанию"
     }
 
     getInfo() {
